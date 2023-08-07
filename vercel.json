@@ -7,6 +7,10 @@
     {
       "src": "/ideabook/carousel-data",
       "dest": "api/ideabook/carousel-data.ts"
+    },
+    {
+      "src": "/ideabook/search",
+      "dest": "api/ideabook/search.ts"
     }
   ]
 }

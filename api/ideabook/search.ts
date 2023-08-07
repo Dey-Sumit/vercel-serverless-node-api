@@ -1,30 +1,12 @@
-export const SEARCH_DICT = {
-  suggestedSearchTerms: [
-    {
-      term: "haldi",
-      meta: {
-        type: "primaryCategory",
-      },
-    },
-
-    {
-      term: "Haldi wedding decoration",
-      meta: {
-        type: "subCategory",
-        primaryCategory: "haldi", // associatedPrimaryCategory =  Haldi
-      },
-    },
-
-    {
-      term: "Haldi wedding outfit design",
-      meta: {
-        type: "freeSearch",
-      },
-    },
-  ],
-  suggestedSearchCategories: [],
-};
+import { DUMMY_SEARCH_STORE } from "../../data/ideabook.data";
 
 module.exports = (req, res) => {
-  res.send(SEARCH_DICT);
+  const searchTerm = req.query.q; // Get the search term from query parameter 'q'
+  const matchingResults = DUMMY_SEARCH_STORE.filter((result) => {
+    return result.searchTerm.toLowerCase().includes(searchTerm.toLowerCase());
+  });
+
+  const top7Results = matchingResults.slice(0, 7); // Get the top 7 results
+
+  res.json(top7Results);
 };
