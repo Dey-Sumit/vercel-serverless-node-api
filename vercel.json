@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "src": "/ideabook/suggested-search",
+      "dest": "api/ideabook/suggested-search.ts"
+    },
+    {
+      "src": "/ideabook/carousel-data",
+      "dest": "api/ideabook/carousel-data.ts"
+    }
+  ]
+}
