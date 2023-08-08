@@ -1,5 +1,5 @@
-import { SUGGESTED_SEARCH } from "../../data/ideabook.data";
+import { POPULAR_SEARCHES } from "../../data/ideabook.data";
 
 module.exports = (req, res, next) => {
-  res.send(SUGGESTED_SEARCH);
+  res.send(POPULAR_SEARCHES);
 };

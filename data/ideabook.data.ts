@@ -19,7 +19,7 @@ export const CAROUSEL_DATA = [
   { id: 18, category: "weddingGiftsPacking", subCategory: null, label: "Wedding Gifts" },
 ];
 
-const POPULAR_CATEGORIES = [
+export const POPULAR_CATEGORIES = [
   {
     id: 1,
     category: "bridalLehengas",
@@ -63,14 +63,14 @@ const POPULAR_CATEGORIES = [
   {
     id: 6,
     category: "weddingJewellery",
-    subCategory: null,
+    subCategory: "",
     label: "Wedding Jewellery",
     description: "Explore stunning wedding jewellery to complete your ensemble.",
     imageSource: `https://source.unsplash.com/random/900x700?jewellery,bride,accessories`,
   },
 ];
 
-export const SUGGESTED_SEARCH = {
+export const POPULAR_SEARCHES = {
   topSearches: [
     {
       id: 1,
