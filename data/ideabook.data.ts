@@ -86,7 +86,7 @@ export const POPULAR_SEARCHES = {
       subCategory: "rajasthani",
     },
   ],
-  browseThroughCategories: POPULAR_CATEGORIES,
+  topCategories: POPULAR_CATEGORIES,
 };
 
 export const DUMMY_SEARCH_STORE = [
