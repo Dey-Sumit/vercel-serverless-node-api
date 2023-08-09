@@ -26,7 +26,7 @@ module.exports = (req, res) => {
   });
 
   const top7SearchTerms = matchingSearchTerms.slice(0, 7);
-  const suggestedSearchCategories = matchingCategories.slice(0, 7);
+  const suggestedSearchCategories = matchingCategories.slice(0, 2);
 
   const response = {
     suggestedSearchTerms: top7SearchTerms,
